@@ -3,6 +3,13 @@ Wagtail case insensitive redirects
 
 Fixes case errors in URLs by redirecting.
 
+Installation
+------------
+
+.. code:: shell
+
+    pip install wagtail-case-insensitive
+
 Usage
 -----
 
