@@ -11,9 +11,9 @@ setup(
     name="wagtail-case-insensitive",
     version=__version__,
     description="Fixes case errors in URLs by redirecting.",
-    url="https://github.com/andylolz/wagtail-case-insensitive",
+    url="https://github.com/FullFact/wagtail-case-insensitive",
     author="Andy Lulham",
-    author_email="a.lulham@gmail.com",
+    author_email="andy.lulham@fullfact.org",
     packages=find_packages(),
     license="MIT",
     install_requires=[
