@@ -21,6 +21,9 @@ class CaseInsensitiveRoutePage(Page):
             # And update = False
             setattr(subpage, "_cached_parent_obj", self)
 
+            if not hasattr(subpage.specific, "case_insensitive_route"):
+                raise Http404
+
             return subpage.specific.case_insensitive_route(request, remaining_components)
 
         else:

@@ -13,6 +13,10 @@ class CaseInsensitiveRouteMiddleware:
             return response
 
         site = Site.find_for_request(request)
+
+        if not hasattr(site.root_page.localized.specific, "case_insensitive_route"):
+            return response
+
         path_components = [
             component for component in request.path.split("/") if component
         ]
